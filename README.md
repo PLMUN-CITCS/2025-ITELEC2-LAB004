@@ -86,19 +86,19 @@ Only perform this if this is the first time you will setup your Git Environment
 
    **Desired Output (Example - will vary based on user input):**
    
-   ```bash
-   Enter an integer: 123
-   Enter a decimal number: 3.14159
-   Enter a string: Hello, Python!
-   Formatted Output using old-style formatting:
-   Integer: 123
-   Decimal: 3.14
-   String: Hello, Python!
-   Formatted Output using f-strings:
-   Integer: 123
-   Decimal: 3.14
-   String: Hello, Python!
-   ```
+```bash
+Enter an integer: 123
+Enter a decimal number: 3.14159
+Enter a string: Hello, Python!
+Formatted Output using old-style formatting:
+Integer: 123
+Decimal: 3.14
+String: Hello, Python!
+Formatted Output using f-strings:
+Integer: 123
+Decimal: 3.14
+String: Hello, Python!
+```
       
    **Notable Observations (to be discussed after completing the exercise):**
    - The input() function always returns a string, even if the user enters a number. You must convert it to the correct type.
@@ -112,46 +112,47 @@ Only perform this if this is the first time you will setup your Git Environment
       
    2.  Get integer input:
       - Use the `input()` function to prompt the user to enter an integer. Store the returned value in a variable named `user_integer`.
-      - *Crucially*, convert the input string to an integer using the `int()` function.
-      ```python
-      user_integer = int(input("Enter an integer: "))
-      ```
+        Crucially*, convert the input string to an integer using the `int()` function.
+
+```python
+user_integer = int(input("Enter an integer: "))
+```
       
-   3. Get decimal (float) input:
+   4. Get decimal (float) input:
       - Use the `input()` function to prompt the user to enter a decimal number. Store the returned value in a variable named `user_decimal`.
       - *Crucially*, convert the input string to a float using the `float()` function.
-      ```python
-      user_decimal = float(input("Enter a decimal number: "))
-      ```
+```python
+user_decimal = float(input("Enter a decimal number: "))
+```
 
-   4. Get string input:
+   5. Get string input:
       - Use the `input()` function to prompt the user to enter a string. Store the returned value in a variable named `user_text`. No conversion is needed here, as `input()` already returns a string.
-      ```python
-      user_text = input("Enter a string: ")
-      ```
+```python
+user_text = input("Enter a string: ")
+```
 
-   5. Display formatted output (old-style):
+   6. Display formatted output (old-style):
       - Use the `print()` function along with the `%` operator to display the values of the three variables in a formatted way.
       - Use `%d` as the format specifier for the integer, `%.2f` for the decimal (formatted to two decimal places), and `%s` for the string.
-      ```python
-      print("Formatted Output using old-style formatting:")
-      print("Integer: %d" % user_integer)
-      print("Decimal: %.2f" % user_decimal)
-      print("String: %s" % user_text)
-      ```
+```python
+print("Formatted Output using old-style formatting:")
+print("Integer: %d" % user_integer)
+print("Decimal: %.2f" % user_decimal)
+print("String: %s" % user_text)
+```
 
-   6. Display formatted output (f-strings - Modern Approach):
+   7. Display formatted output (f-strings - Modern Approach):
       - Use an f-string to display the same information. F-strings are more readable and generally preferred.
-      ```python
-      print("Formatted Output using f-strings:")
-      print(f"Integer: {user_integer}")
-      print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
-      print(f"String: {user_text}")
-      ```
+```python
+print("Formatted Output using f-strings:")
+print(f"Integer: {user_integer}")
+print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
+print(f"String: {user_text}")
+```
 
-   7. Run the code: Execute your Python code.
-   8. Observe the output: Compare your output with the "Desired Output" shown above.
-   9. Discussion (Notable Observations):  
+   8. Run the code: Execute your Python code.
+   9. Observe the output: Compare your output with the "Desired Output" shown above.
+   10. Discussion (Notable Observations):  
       - Why is it essential to convert the input to the correct data type? What would happen if you tried to perform arithmetic operations on the string input directly?
       - Explain the difference between %d, %.2f, and %s in old-style formatting.
       - Explain how f-strings work. Why are they often preferred over old-style formatting? How do you format the decimal places in an f-string?
@@ -162,28 +163,28 @@ Once you've completed your changes, follow these steps to upload your work to yo
 1. Check the status of your changes:
    Open the terminal and run:
    
-   ```bash
-   git status
-   ```
+```bash
+git status
+```
    This command shows any modified or new files.
    
 2. Stage the changes:
    Add all modified files to staging:
    
-   ```bash
-   git add .
-   ```
+```bash
+git add .
+```
    
 3. Commit your changes:
    Write a meaningful commit message:
    
-   ```bash
-   git commit -m "Submitting Python Week 02 - Session 01 - Exercise 02"
-   ```
+```bash
+git commit -m "Submitting Python Week 02 - Session 01 - Exercise 02"
+```
    
 4. Push your changes to GitHub:
    Upload your changes to your remote repository:
    
-   ```bash
-   git push origin main
-   ```
+```bash
+git push origin main
+```

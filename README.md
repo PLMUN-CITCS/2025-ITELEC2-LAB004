@@ -1,7 +1,7 @@
 # 2025-ITELEC2-WK02S01E01
 Week 02 - Python Variables, Operators and I/O Statements
 
-Exercise # 01 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)
+Exercise # 02 - Guided Coding Exercise: Input, Output, and Text Formatting in Python
 
 ## **Instructions**
 
@@ -77,97 +77,82 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Exercise # 01 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)**
+**Exercise # 02 - Guided Coding Exercise: Input, Output, and Text Formatting in Python**
 
    **Objective:**
-   This exercise aims to solidify your understanding of variable declaration, data types (integers, floats, and strings), the crucial concept of case-sensitivity in Python, and best practices for variable naming. You will learn how to create variables, assign values of different types, observe how Python distinguishes between variables based on their case, and write code that is more readable and maintainable.
+      1. Get input from the user using the input() function.
+      2. Convert user input (which is initially a string) to the correct data type (integer or float).
+      3. Display formatted output using old-style string formatting (the % operator).
 
-   **Desired Output:**
+   **Desired Output (Example - will vary based on user input)::**
    ```txt
-   Integer (count): 10
-   Integer (total_count): 20
+   Enter an integer: 123
+   Enter a decimal number: 3.14159
+   Enter a string: Hello, Python!
+   Formatted Output using old-style formatting:
+   Integer: 123
    Decimal: 3.14
-   Text: Hello, Python!
-   Boolean: True
-   None Value: None
+   String: Hello, Python!
+   Formatted Output using f-strings:
+   Integer: 123
+   Decimal: 3.14
+   String: Hello, Python!
    ```
    **Notable Observations (to be discussed after completing the exercise):**
-   - Python is case-sensitive. count and total_count are treated as distinct variables.
-   - Variable names can be assigned and reassigned. The last assignment to a variable is the value it holds.
-   - Different data types are used to represent different kinds of data (numbers vs. text).
-   - Following naming conventions makes code more readable and understandable.
+   - The input() function always returns a string, even if the user enters a number. You must convert it to the correct type.
+   - Old-style string formatting (%) is one way to format output. F-strings (introduced later in the exercise) are the more modern and often preferred way.
+   - Formatting specifiers control how the values are displayed (e.g., number of decimal places).
 
-   **Best Practices for Variable Naming:**
-   - Descriptive Names: Choose names that clearly indicate the variable's purpose (e.g., count instead of x, total_price instead of tp).
-   - Lowercase with Underscores (Snake Case): Use lowercase letters and separate words with underscores (e.g., total_count, item_name, user_age). This is the most common and recommended convention in Python.
-   - Avoid Single-Character Names (except for very short loops): Unless you're using a variable in a very limited scope (like a loop counter i), avoid single-letter names like a, b, or x. Descriptive names are much better.
-   - Be Consistent: Stick to one naming convention throughout your code.
-   - Avoid Reserved Keywords: Don't use Python's reserved keywords (e.g., for, while, if, else, print, class, def) as variable names.
-   - Start with a Letter or Underscore: Variable names must start with a letter (a-z, A-Z) or an underscore (_). They cannot start with a number.
-   - Can Contain Numbers: After the first character, variable names can contain letters, underscores, and numbers.
-   
-   **Literals:**
-   A literal is a raw value that is directly written in the code. It represents a fixed value.
-   - Examples:
-      - 10 (integer literal)
-      - 3.14 (floating-point literal)
-      - "Hello, Python!" (string literal)
-      - True (boolean literal)
-      - None (None literal)
-   
    **Step-by-Step Instructions:**
 
    1. Setting up: Open your preferred Python environment or Text Editor, and create a Python Script.
-      - Required Filename: `exercise_01.py`
+      - Required Filename: `exercise_02.py`
       
-   3. Create variables with numeric literals:
-      - Declare a variable named `count` and assign it the integer literal `10`.
-      - Declare another variable named `decimal_value` and assign it the floating-point literal `3.14`.
+   2.  Get integer input:
+      - Use the `input()` function to prompt the user to enter an integer. Store the returned value in a variable named `user_integer`.
+      - *Crucially*, convert the input string to an integer using the `int()` function.
          ```python
-         count = 10                  # 10 is an integer literal
-         decimal_value = 3.14        # 3.14 is a float literal
+         user_integer = int(input("Enter an integer: "))
          ```
       
-   4. Create a variable with a string literal:
-      - Declare a variable named `message` and assign it the string literal `"Hello, Python!"`.
+   3. Get decimal (float) input:
+      - Use the `input()` function to prompt the user to enter a decimal number. Store the returned value in a variable named `user_decimal`.
+      - *Crucially*, convert the input string to a float using the `float()` function.
          ```python
-         message = "Hello, Python!"   # "Hello, Python!" is a string literal
+         user_decimal = float(input("Enter a decimal number: "))
          ```
 
-   5. Create a variable with a boolean literal:
-      - Declare a variable named `is_active` and assign it the boolean literal `True`.
+   4. Get string input:
+      - Use the `input()` function to prompt the user to enter a string. Store the returned value in a variable named `user_text`. No conversion is needed here, as `input()` already returns a string.
          ```python
-         is_active = True              # True is a boolean literal
+         user_text = input("Enter a string: ")
          ```
 
-   6. Create a variable with the None literal:
-      - Declare a variable named result and assign it the `None` literal. `None` represents the absence of a value.
+   5. Display formatted output (old-style):
+      - Use the `print()` function along with the `%` operator to display the values of the three variables in a formatted way.
+      - Use `%d` as the format specifier for the integer, `%.2f` for the decimal (formatted to two decimal places), and `%s` for the string.
          ```python
-         result = None                # None is the None literal
+         print("Formatted Output using old-style formatting:")
+         print("Integer: %d" % user_integer)
+         print("Decimal: %.2f" % user_decimal)
+         print("String: %s" % user_text)
          ```
 
-   7. Demonstrate case-sensitivity and reassignment:
-      - Reassign the variable count to a new value (e.g., 10).
-      - Declare a new variable named total_count and assign it a different value (e.g., 20).
+   6. Display formatted output (f-strings - Modern Approach):
+      - Use an f-string to display the same information. F-strings are more readable and generally preferred.
          ```python
-         count = 10                    # or any integer literal
-         total_count = 20              # or any other integer literal
+         print("Formatted Output using f-strings:")
+         print(f"Integer: {user_integer}")
+         print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
+         print(f"String: {user_text}")
          ```
 
-   8. Display the values:
-      - Use the print() function to display the values of all variables, including the boolean and None variables. Include descriptive labels.
-         ```python
-         print("Integer (count):", count)
-         print("Integer (total_count):", total_count)
-         print("Decimal:", decimal_value)
-         print("Text:", message)
-         print("Boolean:", is_active)
-         print("None Value:", result)
-         ```
-         
-   9. Run the code: Execute your Python code.
-   10. Observe the output: Compare your output with the "Desired Output" shown above.
-   11. Discussion (Notable Observations):  Discuss the same points as before, and discuss the concept of literals.  How are they different from variables?  Why are they important?  Give examples of different types of literals.
+   7. Run the code: Execute your Python code.
+   8. Observe the output: Compare your output with the "Desired Output" shown above.
+   9. Discussion (Notable Observations):  
+      - Why is it essential to convert the input to the correct data type? What would happen if you tried to perform arithmetic operations on the string input directly?
+      - Explain the difference between %d, %.2f, and %s in old-style formatting.
+      - Explain how f-strings work. Why are they often preferred over old-style formatting? How do you format the decimal places in an f-string?
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.

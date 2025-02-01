@@ -111,8 +111,8 @@ String: Hello, Python!
       - Required Filename: `exercise_02.py`
       
    2.  Get integer input:
-      - Use the `input()` function to prompt the user to enter an integer. Store the returned value in a variable named `user_integer`.
-        Crucially*, convert the input string to an integer using the `int()` function.
+       - Use the `input()` function to prompt the user to enter an integer. Store the returned value in a variable named `user_integer`.
+       - *Crucially*, convert the input string to an integer using the `int()` function.
 
 ```python
 user_integer = int(input("Enter an integer: "))
@@ -153,9 +153,9 @@ print(f"String: {user_text}")
    8. Run the code: Execute your Python code.
    9. Observe the output: Compare your output with the "Desired Output" shown above.
    10. Discussion (Notable Observations):  
-      - Why is it essential to convert the input to the correct data type? What would happen if you tried to perform arithmetic operations on the string input directly?
-      - Explain the difference between %d, %.2f, and %s in old-style formatting.
-      - Explain how f-strings work. Why are they often preferred over old-style formatting? How do you format the decimal places in an f-string?
+   - Why is it essential to convert the input to the correct data type? What would happen if you tried to perform arithmetic operations on the string input directly?
+   - Explain the difference between %d, %.2f, and %s in old-style formatting.
+   - Explain how f-strings work. Why are they often preferred over old-style formatting? How do you format the decimal places in an f-string?
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run the Python program and capture the output
-output=$(python exercise_01.py)
+output=$(python exercise_02.py < tests/input.txt)
 
 # Expected output
 expected=$(cat tests/output.txt)
@@ -12,7 +12,9 @@ if [ "$output" == "$expected" ]; then
   exit 0
 else
   echo "Tests failed"
-  echo "Expected: $expected"
-  echo "Got: $output"
+  echo "Expected: "
+  echo "$expected"
+  echo "Got: "
+  echo "$output"
   exit 1
 fi

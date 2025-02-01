@@ -1,6 +1,8 @@
-Integer (count): 10
-Integer (total_count): 20
+Enter an integer: Enter a decimal number: Enter a string: Formatted Output using old-style formatting:
+Integer: 123
 Decimal: 3.14
-Text: Hello, Python!
-Boolean: True
-None Value: None
+String: Hello Python
+Formatted Output using f-strings:
+Integer: 123
+Decimal: 3.14
+String: Hello Python

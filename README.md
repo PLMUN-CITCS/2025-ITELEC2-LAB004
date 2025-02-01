@@ -85,19 +85,20 @@ Only perform this if this is the first time you will setup your Git Environment
       3. Display formatted output using old-style string formatting (the % operator).
 
    **Desired Output (Example - will vary based on user input)::**
-   ```txt
-   Enter an integer: 123
-   Enter a decimal number: 3.14159
-   Enter a string: Hello, Python!
-   Formatted Output using old-style formatting:
-   Integer: 123
-   Decimal: 3.14
-   String: Hello, Python!
-   Formatted Output using f-strings:
-   Integer: 123
-   Decimal: 3.14
-   String: Hello, Python!
-   ```
+      ```txt
+      Enter an integer: 123
+      Enter a decimal number: 3.14159
+      Enter a string: Hello, Python!
+      Formatted Output using old-style formatting:
+      Integer: 123
+      Decimal: 3.14
+      String: Hello, Python!
+      Formatted Output using f-strings:
+      Integer: 123
+      Decimal: 3.14
+      String: Hello, Python!
+      ```
+      
    **Notable Observations (to be discussed after completing the exercise):**
    - The input() function always returns a string, even if the user enters a number. You must convert it to the correct type.
    - Old-style string formatting (%) is one way to format output. F-strings (introduced later in the exercise) are the more modern and often preferred way.
@@ -111,41 +112,41 @@ Only perform this if this is the first time you will setup your Git Environment
    2.  Get integer input:
       - Use the `input()` function to prompt the user to enter an integer. Store the returned value in a variable named `user_integer`.
       - *Crucially*, convert the input string to an integer using the `int()` function.
-         ```python
-         user_integer = int(input("Enter an integer: "))
-         ```
+      ```python
+      user_integer = int(input("Enter an integer: "))
+      ```
       
    3. Get decimal (float) input:
       - Use the `input()` function to prompt the user to enter a decimal number. Store the returned value in a variable named `user_decimal`.
       - *Crucially*, convert the input string to a float using the `float()` function.
-         ```python
-         user_decimal = float(input("Enter a decimal number: "))
-         ```
+      ```python
+      user_decimal = float(input("Enter a decimal number: "))
+      ```
 
    4. Get string input:
       - Use the `input()` function to prompt the user to enter a string. Store the returned value in a variable named `user_text`. No conversion is needed here, as `input()` already returns a string.
-         ```python
-         user_text = input("Enter a string: ")
-         ```
+      ```python
+      user_text = input("Enter a string: ")
+      ```
 
    5. Display formatted output (old-style):
       - Use the `print()` function along with the `%` operator to display the values of the three variables in a formatted way.
       - Use `%d` as the format specifier for the integer, `%.2f` for the decimal (formatted to two decimal places), and `%s` for the string.
-         ```python
-         print("Formatted Output using old-style formatting:")
-         print("Integer: %d" % user_integer)
-         print("Decimal: %.2f" % user_decimal)
-         print("String: %s" % user_text)
-         ```
+      ```python
+      print("Formatted Output using old-style formatting:")
+      print("Integer: %d" % user_integer)
+      print("Decimal: %.2f" % user_decimal)
+      print("String: %s" % user_text)
+      ```
 
    6. Display formatted output (f-strings - Modern Approach):
       - Use an f-string to display the same information. F-strings are more readable and generally preferred.
-         ```python
-         print("Formatted Output using f-strings:")
-         print(f"Integer: {user_integer}")
-         print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
-         print(f"String: {user_text}")
-         ```
+      ```python
+      print("Formatted Output using f-strings:")
+      print(f"Integer: {user_integer}")
+      print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
+      print(f"String: {user_text}")
+      ```
 
    7. Run the code: Execute your Python code.
    8. Observe the output: Compare your output with the "Desired Output" shown above.

@@ -80,7 +80,7 @@ Only perform this if this is the first time you will setup your Git Environment
 **Exercise # 02 - Guided Coding Exercise: Input, Output, and Text Formatting in Python**
 
    **Objective:**
-      1. Get input from the user using the input() function.
+      1. Get input from the user using the `input()` function.
       2. Convert user input (which is initially a string) to the correct data type (integer or float).
       3. Display formatted output using old-style string formatting (the % operator).
 
@@ -101,7 +101,7 @@ String: Hello, Python!
 ```
       
    **Notable Observations (to be discussed after completing the exercise):**
-   - The input() function always returns a string, even if the user enters a number. You must convert it to the correct type.
+   - The `input()` function always returns a string, even if the user enters a number. You must convert it to the correct type.
    - Old-style string formatting (%) is one way to format output. F-strings (introduced later in the exercise) are the more modern and often preferred way.
    - Formatting specifiers control how the values are displayed (e.g., number of decimal places).
 

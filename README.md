@@ -176,7 +176,7 @@ Once you've completed your changes, follow these steps to upload your work to yo
    Write a meaningful commit message:
    
    ```bash
-   git commit -m "Submitting Python Week 02 - Session 01 - Exercise 01"
+   git commit -m "Submitting Python Week 02 - Session 01 - Exercise 02"
    ```
    
 4. Push your changes to GitHub:

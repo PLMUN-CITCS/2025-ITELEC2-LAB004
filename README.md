@@ -1,4 +1,4 @@
-# 2025-ITELEC2-WK02S01E01
+# 2025-ITELEC2-WK02S01E02
 Week 02 - Python Variables, Operators and I/O Statements
 
 Exercise # 02 - Guided Coding Exercise: Input, Output, and Text Formatting in Python

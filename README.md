@@ -85,20 +85,20 @@ Only perform this if this is the first time you will setup your Git Environment
       3. Display formatted output using old-style string formatting (the % operator).
 
    **Desired Output (Example - will vary based on user input):**
-      
-      ```bash
-      Enter an integer: 123
-      Enter a decimal number: 3.14159
-      Enter a string: Hello, Python!
-      Formatted Output using old-style formatting:
-      Integer: 123
-      Decimal: 3.14
-      String: Hello, Python!
-      Formatted Output using f-strings:
-      Integer: 123
-      Decimal: 3.14
-      String: Hello, Python!
-      ```
+   
+   ```bash
+   Enter an integer: 123
+   Enter a decimal number: 3.14159
+   Enter a string: Hello, Python!
+   Formatted Output using old-style formatting:
+   Integer: 123
+   Decimal: 3.14
+   String: Hello, Python!
+   Formatted Output using f-strings:
+   Integer: 123
+   Decimal: 3.14
+   String: Hello, Python!
+   ```
       
    **Notable Observations (to be discussed after completing the exercise):**
    - The input() function always returns a string, even if the user enters a number. You must convert it to the correct type.

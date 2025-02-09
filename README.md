@@ -161,9 +161,14 @@ print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
 print(f"String: {user_text}")
 ```
 
-   8. Run the code: Execute your Python code.
-   9. Observe the output: Compare your output with the "Desired Output" shown above.
-   10. Discussion (Notable Observations):  
+   8. Run the code:
+   - Save the file and execute your script by running:
+   ```bash
+   python exercise_02.py
+   ```
+   - Verify that your output matches the desired output.
+
+   9. Discussion (Notable Observations):  
    - Why is it essential to convert the input to the correct data type? What would happen if you tried to perform arithmetic operations on the string input directly?
    - Explain the difference between %d, %.2f, and %s in old-style formatting.
    - Explain how f-strings work. Why are they often preferred over old-style formatting? How do you format the decimal places in an f-string?
